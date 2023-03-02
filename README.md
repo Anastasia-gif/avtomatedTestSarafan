@@ -4,6 +4,5 @@
 
 ### **Project navigation**
 
-***/app/src/test/java/avtomatedTestSarafan*** -Tests for site sections
+***/app/src/test/java/avtomatedTestSarafan*** - Tests for site sections
 
--
