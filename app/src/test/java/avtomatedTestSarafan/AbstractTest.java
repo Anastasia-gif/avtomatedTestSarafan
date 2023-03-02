@@ -68,41 +68,8 @@ public class AbstractTest {
 
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-   /* @Test
-    public void testSendSms() throws IOException, InterruptedException {
-
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .header("content-type","application/json")
-                .uri(URI.create("https://dev.sarawan.ru/users/authentication/api/sms-send/"))
-                .POST(HttpRequest.BodyPublishers.ofString("{\n" +
-                        "    \"phone_number\": \"+79043003025\"\n" +
-                        "}")) // GET is default
-                .build();
-
-        HttpResponse<Void> response = client.send(request,
-                HttpResponse.BodyHandlers.discarding());
-
-        System.out.println(response.statusCode());
-        String smsCode=JOptionPane.showInputDialog("code?");
-        request = HttpRequest.newBuilder()
-                .header("content-type","application/json")
-                .uri(URI.create("https://dev.sarawan.ru/users/authentication/api/get-token/"))
-                .POST(HttpRequest.BodyPublishers.ofString("{\n" +
-                        "    \"phone_number\": \"+79043003025\",\n" +
-                        "    \"code\": \""+smsCode+"\"\n" +
-                        "}"))
-                .build();
-
-        var res2 = client.send(request,
-                HttpResponse.BodyHandlers.ofString());
-
-        System.out.println(res2.statusCode());
-        System.out.println(res2.body());
-
-    }
     @AfterAll
     public static void destroy() {
         driver.close();
-    }*/
+    }
 }
